@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List</title>
+    <!-- Styles CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script src="https://kit.fontawesome.com/c227f8f709.js" crossorigin="anonymous"></script>
+  </head>
+
+
+  <body>
+    <!-- Contenedor Landing -->
+    <div class="contenedor-landing" id="contenedorLanding">
+      <h1>TODO LIST</h1>
+
+      <!-- Agregar Tareas -->
+      <form class="contenedorFormulario" id="formulario">
+        <label class="tituloAdd">nueva tarea</label>
+        <div class="formulario">
+            <input class="ingresarTareaInput" id="ingresarTareaInput" />
+            <button class="btnAgregarTarea" id="btnAgregarTarea">Agregar</button>
+        </div>
+      </form>
+
+      <!-- Sección tareas tareas -->
+      <section class="seccion-tareas">
+        <!-- contadores -->
+        <div class="contadores">
+          <p id="totalTareas"></p>
+          <p id="tareasRealizadas">Realizadas:</p>
+        </div>
+
+        <!-- Visualizar lista de tareas -->
+        <div class="tareas">
+          <div class="titulosItemsTareas">
+            <p class="tituloId">id</p>
+            <p class="tituloTarea">nombre tarea</p>
+          </div>
+          <ul class="lista-tareas" id="listaTareas">
+            <!-- Renderizar tareas -->
+          </ul>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- Script JS -->
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
